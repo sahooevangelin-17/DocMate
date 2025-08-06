@@ -1,0 +1,113 @@
+/* HomePage.css */
+
+.home {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #e6e0f8, #f5f2ff);
+  color: #2c1b47;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro h1 {
+  font-size: 2.8rem;
+  color: #4b2e83;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.doctors {
+  margin-bottom: 3rem;
+}
+
+.doctors h2 {
+  font-size: 2rem;
+  color: #4b2e83;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.doctor-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(76, 29, 149, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-card img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.doctor-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #3c2566;
+}
+
+.doctor-card p {
+  margin: 0.2rem 0;
+}
+
+.extras {
+  background-color: #f3ecff;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.extras h2 {
+  font-size: 2rem;
+  color: #4b2e83;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.extras ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.extras li {
+  padding: 0.5rem 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}

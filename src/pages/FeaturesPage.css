@@ -1,0 +1,43 @@
+.features-page {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right, #faf5ff, #e6e0f7);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.features-page h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #5e4b8b;
+  margin-bottom: 3rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(153, 131, 192, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #5e4b8b;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}

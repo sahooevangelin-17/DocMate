@@ -1,0 +1,130 @@
+.about-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.about-header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: linear-gradient(to right, #5b247a, #9d66df);
+  color: white;
+}
+
+.about-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.about-intro {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 30px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 60px 10%;
+  background-color: #fff;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.team {
+  background-color: #fafafa;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.member {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.member img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.member h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.member p {
+  font-size: 14px;
+  color: #666;
+}
+
+.about-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 10%;
+  text-align: center;
+}
