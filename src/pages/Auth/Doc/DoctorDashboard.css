@@ -92,3 +92,27 @@
   font-size: 15px;
   color: #666;
 }
+.details-section {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.details-section h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #19003c;
+}
+
+.details-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.details-section li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}

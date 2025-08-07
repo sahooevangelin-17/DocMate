@@ -13,6 +13,10 @@ const Register = () => {
     navigate("/register/patient");
   };
 
+  const handleAdminRegister = () => {
+    navigate("/register/admin");
+  };
+
   return (
     <div className="auth-container">
       <div className="auth-box">
@@ -24,6 +28,9 @@ const Register = () => {
           </button>
           <button className="auth-btn" onClick={handlePatientRegister}>
             Patient
+          </button>
+          <button className="auth-btn" onClick={handleAdminRegister}>
+            Admin
           </button>
         </div>
         <p>

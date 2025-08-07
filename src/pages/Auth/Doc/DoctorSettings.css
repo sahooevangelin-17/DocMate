@@ -1,0 +1,83 @@
+.doctor-settings-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fefefe;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #4b007d;
+  margin-bottom: 30px;
+}
+
+.settings-section {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.settings-section:last-child {
+  border: none;
+}
+
+.settings-section h3 {
+  color: #5e007f;
+  margin-bottom: 10px;
+}
+
+.settings-section p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.edit-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.edit-form input:focus {
+  border-color: #a74cff;
+  outline: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #6741d9;
+  color: white;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.password-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.logout-btn {
+  background-color: #e53935;
+  color: white;
+}
+
+.logout-section {
+  text-align: center;
+}

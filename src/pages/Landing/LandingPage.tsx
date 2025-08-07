@@ -45,9 +45,11 @@ const LandingPage = () => {
         <ul className="nav-links">
             <li><Link to="/About">About</Link></li>
             <li><Link to="/FeatureS">Features</Link></li>
+            <li><Link to="/Articles">Articles</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
-        </ul>
-        <Link to="/Login">
+            </ul>
+
+             <Link to="/Login">
           <button className="login-btn">Login</button>
         </Link>
       </nav>
