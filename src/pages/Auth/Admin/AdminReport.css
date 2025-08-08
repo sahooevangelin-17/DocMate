@@ -1,0 +1,43 @@
+.admin-report-container {
+  padding: 20px;
+  background-color: #f0f2f5;
+  min-height: 90vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+h2 {
+  color: #1a0624;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.report-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.report-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 6px solid #6c63ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.report-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.report-card p {
+  margin: 5px 0;
+  color: #444;
+}

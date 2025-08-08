@@ -1,85 +1,64 @@
-import React, { useState } from "react";
-import "./DoctorRegister.css";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './DoctorRegister.css';
 
 const DoctorRegister = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [approved, setApproved] = useState(false);
+  const [message, setMessage] = useState('');
   const navigate = useNavigate();
 
-  const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    password: "",
-    specialization: "",
-    experience: "",
-    courses: ""
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleRegister = (e) => {
+    e.preventDefault();
+    setShowPopup(true); // Show upload popup
   };
 
-  const handleSubmit = (e) => {
+  const handleUploadSubmit = (e) => {
     e.preventDefault();
-    console.log("Doctor Registered:", formData);
-    // TODO: Save data to backend here
+    setMessage('Request sent to admin. Waiting for approval...');
 
-    // Navigate to doctor dashboard after registration
-    navigate("/doctor-dashboard");
+    // Simulate approval and redirect after 2 seconds
+    setTimeout(() => {
+      setMessage('Admin has approved your profile ✅');
+      setApproved(true);
+
+      setTimeout(() => {
+        navigate('/doctor-dashboard'); // Go to dashboard
+      }, 2000);
+    }, 2000);
   };
 
   return (
     <div className="auth-container">
       <div className="auth-box">
-        <h2>Register as Doctor 🩺</h2>
-        <p>Fill in the details to join as a healthcare provider</p>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="fullName"
-            placeholder="Full Name"
-            value={formData.fullName}
-            onChange={handleChange}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={formData.password}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="specialization"
-            placeholder="Specialization"
-            value={formData.specialization}
-            onChange={handleChange}
-          />
-          <input
-            type="number"
-            name="experience"
-            placeholder="Years of Experience"
-            value={formData.experience}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="courses"
-            placeholder="Completed Medical Courses"
-            value={formData.courses}
-            onChange={handleChange}
-          />
-          <button className="auth-btn" type="submit">
-            Register
-          </button>
+        <h2>Doctor Registration</h2>
+        <p>Fill in your details to register as a doctor.</p>
+
+        <form onSubmit={handleRegister}>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <input type="text" placeholder="Specialization" required />
+          <input type="text" placeholder="Experience (in years)" required />
+          <button className="auth-btn" type="submit">Register</button>
         </form>
+
+        {showPopup && (
+          <div className="upload-popup">
+            <h3>Upload Documents</h3>
+            <form onSubmit={handleUploadSubmit}>
+              <label>Upload Bio Data:</label>
+              <input type="file" required />
+
+              <label>Upload Course Completion Certificate:</label>
+              <input type="file" required />
+
+              <button className="auth-btn" type="submit">Submit Documents</button>
+            </form>
+
+            {message && <p className="success-message">{message}</p>}
+          </div>
+        )}
       </div>
     </div>
   );

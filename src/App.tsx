@@ -18,8 +18,13 @@ import AdminRegister from './pages/Auth/AdminRegister';
 import DoctorAppointments from './pages/Auth/Doc/DoctorAppointments';
 import DoctorVideoConsultation from './pages/Auth/Doc/DoctorVideoConsultation';
 import DoctorSettings from './pages/Auth/Doc/DoctorSettings';
-
-
+import AdminDashboard from './pages/Auth/Admin/AdminDashboard';
+import DigitalPrescription from './pages/Auth/Doc/DigitalPrescription';
+import AdminPatient from "./pages/Auth/Admin/AdminPatient";
+import AdminDoctor from "./pages/Auth/Admin/AdminDoctor";
+import AdminAppointment from './pages/Auth/Admin/AdminAppointment';
+import AdminReport from'./pages/Auth/Admin/AdminReport';
+import AdminSettings from'./pages/Auth/Admin/AdminSettings';
 
 function App() {
   return (
@@ -45,6 +50,13 @@ function App() {
         <Route path="/doctor-dashboard/appointments" element={<DoctorAppointments />} />
         <Route path="/doctor-dashboard/video-consultation" element={<DoctorVideoConsultation />} />
         <Route path="/doctor-dashboard/settings" element={<DoctorSettings />} />
+        <Route path="/admin/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/doctor-dashboard/prescription" element={<DigitalPrescription />} />
+        <Route path="/admin-dashboard/patients" element={<AdminPatient />} />
+        <Route path="/admin-dashboard/doctors" element={<AdminDoctor />} />
+        <Route path="/admin-dashboard/appointments" element={<AdminAppointment />} />
+        <Route path="/admin-dashboard/reports" element={<AdminReport />} />
+        <Route path="/admin-dashboard/settings" element={<AdminSettings />} />
 
       </Routes>
     </Router>

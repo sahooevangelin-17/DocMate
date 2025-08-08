@@ -57,3 +57,31 @@
 .auth-btn:hover {
   background-color: #5013a5;
 }
+
+.upload-popup {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.upload-popup h3 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.upload-popup input[type="file"] {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}

@@ -35,8 +35,10 @@ const DoctorDashboard = () => {
           <Link to="/doctor-dashboard"><MdDashboard /> Dashboard</Link>
           <Link to="/doctor-dashboard/appointments"><MdEventAvailable /> Appointments</Link>
           <Link to="/doctor-dashboard/video-consultation"><MdVideoCall /> Video Calls</Link>
+          <Link to="/doctor-dashboard/prescription">Digital Prescription</Link>
           <Link to="/articles"><MdLibraryBooks /> Articles</Link>
           <Link to="/doctor-dashboard/settings"><MdSettings /> Settings</Link>
+          
         </nav>
       </aside>
 

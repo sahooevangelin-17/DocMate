@@ -1,0 +1,50 @@
+.admin-appointment-container {
+  padding: 20px;
+  background-color: #f8f9fc;
+  min-height: 90vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+h2 {
+  color: #1a0624;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.appointment-table th,
+.appointment-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.appointment-table th {
+  background-color: #1a0624;
+  color: #ffffff;
+}
+
+.completed {
+  color: green;
+  font-weight: 500;
+}
+
+.pending {
+  color: orange;
+  font-weight: 500;
+}
